@@ -13,6 +13,6 @@ import { SecondsCounter } from "./component/SecondsCounter.js";
 
 //render your react application
 ReactDOM.render(
-	<SecondsCounter seconds={999999} />,
+	<SecondsCounter seconds={123456} />,
 	document.querySelector("#app")
 );
