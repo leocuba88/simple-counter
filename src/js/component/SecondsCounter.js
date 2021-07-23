@@ -18,7 +18,7 @@ export function SecondsCounter(props) {
 	return (
 		<div className="block">
 			<div className="bigDiv">
-				<i class="far fa-clock fa-5x"></i>
+				<i className="far fa-clock fa-5x"></i>
 			</div>
 
 			<div className="little">{saDivs}</div>

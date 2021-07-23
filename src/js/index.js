@@ -12,7 +12,15 @@ import "../styles/index.scss";
 import { SecondsCounter } from "./component/SecondsCounter.js";
 
 //render your react application
-ReactDOM.render(
-	<SecondsCounter seconds={123456} />,
-	document.querySelector("#app")
-);
+let startingTime = Date.now();
+
+function incrementSeconds() {
+	let currentTime = Date.now();
+	let seconds = Math.floor((currentTime - startingTime) / 1000);
+
+	ReactDOM.render(
+		<SecondsCounter seconds={seconds} />,
+		document.querySelector("#app")
+	);
+}
+setInterval(incrementSeconds, 1000);
